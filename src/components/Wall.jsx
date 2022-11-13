@@ -14,7 +14,15 @@ const Wall = () => {
       setMovies(response.data.results);
     });
   }, []);
-    console.log(movie);
+
+
+  const makeShort = (str, num) => {
+    if(str?.length > num) {
+        return str.slice(0, num) + '...';
+    } else {
+        return str;
+    }
+  }
 
   return (
     <div className='w-full h-[550px] text-white' >
@@ -32,7 +40,7 @@ const Wall = () => {
                 </div>
 
                 <p className='text-gray-500 text-sm'>Released: {movie?.release_date}</p>
-                <p className='w-full md:max-w-[70%] lg:max-w-[50%] xl:max-w-[35%] text-gray-300'>{movie?.overview}</p>
+                <p className='w-full md:max-w-[70%] lg:max-w-[50%] xl:max-w-[35%] text-gray-300'>{makeShort(movie?.overview, 300)}</p>
             </div>
 
         </div>
