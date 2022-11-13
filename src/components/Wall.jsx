@@ -35,8 +35,8 @@ const Wall = () => {
                 <h1 className='text-3xl md:text-5xl font-bold' >{movie?.title}</h1>
 
                 <div className='my-5'>
-                    <button className='border bg-gray-300 text-black border-gray-300 py-2 px-5'>Play</button>
-                    <button className='border text-white border-gray-300 py-2 px-5 ml-3'>Watch later</button>
+                    <button className=' bg-red-700 text-white py-2 px-5'>Watch now!</button>
+                    <button className='border text-white border-gray-300 py-2 px-5 ml-3 bg-black/50'>Watch later</button>
                 </div>
 
                 <p className='text-gray-500 text-sm'>Released: {movie?.release_date}</p>
