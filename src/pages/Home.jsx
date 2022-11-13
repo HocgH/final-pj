@@ -1,9 +1,15 @@
-import React from 'react'
+
+
+import Wall from '../components/Wall';
+
 
 const Home = () => {
+
   return (
-    <div>Home</div>
-  )
+    <div>
+        <Wall/>
+    </div>
+  );
 }
 
-export default Home
+export default Home;
