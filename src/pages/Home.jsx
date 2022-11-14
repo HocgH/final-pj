@@ -10,11 +10,11 @@ const Home = () => {
   return (
     <div>
         <Wall/>
-        <RowMovies title='Popular ' fetchURL={requests.requestPopular}/>
-        <RowMovies title='Trending ' fetchURL={requests.requestTrending}/>
-        <RowMovies title='UpComing' fetchURL={requests.requestUpcoming}/>
-        <RowMovies title='What people loves ' fetchURL={requests.requestTopRated}/>
-        <RowMovies title='Horror' fetchURL={requests.requestHorror}/>
+        <RowMovies ownID= '1' title='Popular ' fetchURL={requests.requestPopular}/>
+        <RowMovies ownID= '2' title='Trending ' fetchURL={requests.requestTrending}/>
+        <RowMovies ownID= '3' title='UpComing' fetchURL={requests.requestUpcoming}/>
+        <RowMovies ownID= '4' title='What people loves ' fetchURL={requests.requestTopRated}/>
+        <RowMovies ownID= '5' title='Horror' fetchURL={requests.requestHorror}/>
     </div>
   );
 }
